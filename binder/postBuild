@@ -15,7 +15,7 @@ cd $UG4_ROOT
 
 cd $HOME/opt/ug4/ugcore
 git checkout -b feature-pybind11
-
+git status
 
 cd $HOME/opt/ug4
 mkdir build
