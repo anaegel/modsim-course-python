@@ -11,8 +11,16 @@ mkdir $UG4_ROOT
 cd $UG4_ROOT
 ../ughub/ughub init
 ../ughub/ughub install Examples
+
+
+cd $HOME/opt/ug4/ugcore
+git checkout -b feature-pybind11
+
+
 cd $HOME/opt/ug4
 mkdir build
 cd build
-cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release -DLimex=ON -DConvectionDiffusion=ON -DDIM="2;3" -DCPU=1 ..
+cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
+cmake -DDIM="2;3" -DCPU=1 -DUSE_PYBIND11=ON ..
+cmake -DLimex=ON -DConvectionDiffusion=ON ..
 make -j8
