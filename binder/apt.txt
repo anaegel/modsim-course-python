@@ -1,9 +1,7 @@
-ghostscript
-texlive-xetex
-texlive-fonts-recommended
-texlive-plain-generic
 clang
 cmake
 clang
 llvm
 libopenmpi-dev 
+liblapack-dev
+libblas-dev 
