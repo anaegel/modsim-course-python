@@ -1,5 +1,5 @@
-# modsim-course
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anaegel/modsim-course-python/master)
+# modsim-course-python
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anaegel/modsim-course-python/main)
 This package provides binder-style UI for UG4
 
 
