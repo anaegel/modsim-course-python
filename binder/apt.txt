@@ -4,3 +4,4 @@ llvm
 libopenmpi-dev 
 liblapack-dev
 libblas-dev 
+python3
