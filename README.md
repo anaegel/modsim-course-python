@@ -8,4 +8,6 @@ Please start the course [here](index.ipynb).
 
 ## Dependencies:
 * [UG4 on GitHub](http://github.com/UG4)
-* 
+* Ubuntu packages are in binder/apt.txt
+* Python packages are in binder/requirements.txt
+* Installation script in binder/postBuild
