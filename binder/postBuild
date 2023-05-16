@@ -27,6 +27,10 @@ git pull
 git status
 less cmake/ug/pybind11.cmake
 
+mkdir $UG4_ROOT/bin
+mkdir $UG4_ROOT/bin/plugins
+mkdir $UG4_ROOT/bin/plugins/ug4py
+
 cd $UG4_ROOT
 mkdir build
 cd build
