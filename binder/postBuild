@@ -13,6 +13,12 @@ cd $UG4_ROOT
 ../ughub/ughub install Examples
 
 
+# Fetch Pybind
+cd $UG4_ROOT
+../ughub/ughub install PybindForUG4
+../ughub/ughub git submodule init
+../ughub/ughub git submodule update
+
 cd $UG4_ROOT/ugcore
 git checkout feature-pybind11
 git pull
@@ -23,6 +29,6 @@ cd $UG4_ROOT
 mkdir build
 cd build
 cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
-cmake -DDIM="2;3" -DCPU=1 -DUSE_PYBIND11=ON ..
+cmake -DDIM="2;3" -DCPU=1 -DUSE_PYBIND11=ON -DCMAKE_POLICY_DEFAULT_CMP0057=NEW ..
 cmake -DLimex=ON -DConvectionDiffusion=ON ..
 make -j8
