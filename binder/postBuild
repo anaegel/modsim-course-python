@@ -16,9 +16,9 @@ cd $UG4_ROOT
 cd $UG4_ROOT/ugcore
 git checkout -b feature-pybind11
 git status
+less cmake/ug/pybind11.cmake
 
 cd $UG4_ROOT
-ls
 mkdir build
 cd build
 cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
