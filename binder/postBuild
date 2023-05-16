@@ -19,7 +19,7 @@ cd $UG4_ROOT
 ../ughub/ughub git submodule init
 ../ughub/ughub git submodule update
 
-ls /usr/include/*
+ls /usr/include/p*
 
 cd $UG4_ROOT/ugcore
 git checkout feature-pybind11
