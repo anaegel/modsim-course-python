@@ -11,6 +11,7 @@ mkdir $UG4_ROOT
 cd $UG4_ROOT
 ../ughub/ughub init
 ../ughub/ughub install Examples
+../ughub/ughub install Limex
 
 
 # Fetch Pybind
