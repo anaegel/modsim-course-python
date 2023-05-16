@@ -14,7 +14,8 @@ cd $UG4_ROOT
 
 
 cd $UG4_ROOT/ugcore
-git switch feature-pybind11
+git checkout feature-pybind11
+git pull
 git status
 less cmake/ug/pybind11.cmake
 
