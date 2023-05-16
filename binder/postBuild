@@ -13,11 +13,12 @@ cd $UG4_ROOT
 ../ughub/ughub install Examples
 
 
-cd $HOME/opt/ug4/ugcore
+cd $UG4_ROOT/ugcore
 git checkout -b feature-pybind11
 git status
 
-cd $HOME/opt/ug4
+cd $UG4_ROOT
+ls
 mkdir build
 cd build
 cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
