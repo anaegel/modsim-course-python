@@ -5,5 +5,5 @@ libopenmpi-dev
 liblapack-dev
 libblas-dev 
 python3
-libpython3
-libpython3-dev
+libpython3.6
+libpython3.6-dev
