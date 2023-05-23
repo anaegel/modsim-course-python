@@ -20,10 +20,6 @@ cd $UG4_ROOT
 ../ughub/ughub git submodule init
 ../ughub/ughub git submodule update
 
-# ls /usr/include/python3.10
-# ls /usr/lib/python3.10
-# ls /srv/conda/envs/notebook/lib/python3.10
-
 # Change to pybind feature
 cd $UG4_ROOT/ugcore
 git checkout feature-pybind11
@@ -35,14 +31,7 @@ mkdir $UG4_ROOT/bin
 mkdir $UG4_ROOT/bin/plugins
 mkdir $UG4_ROOT/bin/plugins/ug4py
 
-
-# Hint for python
-# export Python_ROOT_DIR=/srv/conda/envs/notebook/lib/python3.10
-# export Python_FIND_STRATEGY=LOCATION
-
-conda info --envs
-conda env list
-
+# Remove python3.11 (which deviates from Jupyter version, but would be found by cmake below)
 rm -rf /srv/conda/bin/python3.11
 rm -rf /srv/conda/include/python3.11
 rm -rf /srv/conda/lib/python3.11*
