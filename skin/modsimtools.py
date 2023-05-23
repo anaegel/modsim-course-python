@@ -8,7 +8,7 @@ sys.path.append(env_ug4_root+'/bin/plugins/ug4py')
 import ug4py as ug4
 import pylimex as limex
 import pyconvectiondiffusion as cd
-import pysuperlu as slu
+# import pysuperlu as slu
 
 def CreateDomain(gridName, numRefs, requiredSubsets):
     # Choosing a domain object
