@@ -40,6 +40,9 @@ mkdir $UG4_ROOT/bin/plugins/ug4py
 # export Python_ROOT_DIR=/srv/conda/envs/notebook/lib/python3.10
 # export Python_FIND_STRATEGY=LOCATION
 
+conda info --envs
+conda env list
+
 # Build UG4
 cd $UG4_ROOT
 mkdir build
