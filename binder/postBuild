@@ -43,6 +43,10 @@ mkdir $UG4_ROOT/bin/plugins/ug4py
 conda info --envs
 conda env list
 
+rm -rf /srv/conda/bin/python3.11
+rm -rf /srv/conda/include/python3.11
+rm -rf /srv/conda/lib/python3.11*
+
 # Build UG4
 cd $UG4_ROOT
 mkdir build
