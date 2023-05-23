@@ -37,7 +37,7 @@ mkdir $UG4_ROOT/bin/plugins/ug4py
 
 
 # Hint for python
-export Python_ROOT_DIR=/conda
+export Python_ROOT_DIR=/srv/conda/envs/notebook/lib/python3.10
 
 # Build UG4
 cd $UG4_ROOT
