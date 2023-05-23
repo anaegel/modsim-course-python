@@ -20,8 +20,8 @@ cd $UG4_ROOT
 ../ughub/ughub git submodule init
 ../ughub/ughub git submodule update
 
-ls /usr/include/p*
-ls /usr/lib/p*
+ls /usr/include/python3.10
+ls /usr/lib/python3.10
 ls /srv/conda/envs/notebook/lib/python3.10
 
 # Change to pybind feature
