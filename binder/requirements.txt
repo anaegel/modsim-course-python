@@ -1,3 +1,5 @@
 cmake
 numpy
 matplotlib
+pyvista
+trame
