@@ -5,6 +5,6 @@ llvm
 libopenmpi-dev 
 liblapack-dev
 libblas-dev 
-# python3
-# libpython3.8
-# libpython3.8-dev
+# Optional:
+#vtk9 
+#libvtk-9dev
