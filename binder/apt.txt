@@ -1,4 +1,5 @@
 # cmake
+build-essential
 clang
 llvm
 libopenmpi-dev 
