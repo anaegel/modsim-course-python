@@ -4,6 +4,7 @@ env_ug4_root = os.environ['UG4_ROOT']
 import sys
 sys.path.append(env_ug4_root+'/lib/')
 sys.path.append(env_ug4_root+'/bin/plugins/ug4py')
+print(sys.path)
 
 import ug4py as ug4
 import pylimex as limex

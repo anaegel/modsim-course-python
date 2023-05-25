@@ -33,7 +33,7 @@ WORKDIR ${HOME}
 
 # Install UG4
 USER jovyan
-ENV UG4_ROOT=$HOME/ug4
+ENV UG4_ROOT=$HOME/opt/ug4
 ENV PATH=$PATH:${HOME}/ughub
 COPY ./binder/postBuild tmp/postBuild
 RUN bash tmp/postBuild
