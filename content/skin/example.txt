@@ -1,4 +1,0 @@
-domainDisc = ug4.DomainDiscretization2dCPU1(approxSpace)
-domainDisc.add(elemDisc["COR"])
-domainDisc.add(elemDisc["LIP"])
-domainDisc.add(dirichletBND)
