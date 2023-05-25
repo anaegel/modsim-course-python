@@ -12,13 +12,14 @@ cd $UG4_ROOT
 ../ughub/ughub init
 ../ughub/ughub install Examples
 ../ughub/ughub install Limex
-
+../ughub/ughub install SuperLU6
 
 # Fetch Pybind
 cd $UG4_ROOT
 ../ughub/ughub install PybindForUG4
 ../ughub/ughub git submodule init
 ../ughub/ughub git submodule update
+
 
 # Change to pybind feature
 cd $UG4_ROOT/ugcore
