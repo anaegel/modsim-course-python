@@ -27,6 +27,11 @@ git checkout feature-pybind11
 git pull
 
 
+# Change to v6.0.0
+cd $UG4_ROOT/plugins/SuperLU6/external/superlu
+git checkout v6.0.0
+
+
 # Create directory for Python
 mkdir $UG4_ROOT/bin
 mkdir $UG4_ROOT/bin/plugins
