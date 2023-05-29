@@ -6,5 +6,5 @@ libopenmpi-dev
 liblapack-dev
 libblas-dev 
 # Optional:
-#vtk9 
-#libvtk-9dev
+libgl1-mesa-glx
+xvfb

@@ -17,7 +17,8 @@ services:
       - DOCKER_STACKS_JUPYTER_CMD=nbclassic
     volumes:
       - ../content:/home/jovyan/content
-    image: ghcr.io/anaegel/modsim-course-python:latest
+    #image: ghcr.io/anaegel/modsim-course-python:latest
+    image: anaegel/vtkexp	
 #volumes:
 #  myFiles:
 #    external: true

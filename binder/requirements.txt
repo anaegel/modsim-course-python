@@ -6,5 +6,6 @@ matplotlib
 ipywidgets
 # The following packages depend on vtk, which is not available on Linux arm64 via pip yet.
 vtk
-pyvista
-trame
+pyvista[all,trame]
+jupyter-server-proxy
+# opencv-python-headless

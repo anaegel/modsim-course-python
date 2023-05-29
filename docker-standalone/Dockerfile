@@ -8,7 +8,7 @@ RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 # Install via apt (as root).
 USER root
-COPY ../binder/apt.txt tmp/apt.txt
+COPY ./binder/apt.txt tmp/apt.txt
 RUN apt-get update \
     && apt-get install -y $(grep -vE "^\s*#" tmp/apt.txt   | tr "\n" " ") \
     && apt-get clean \
@@ -39,5 +39,7 @@ COPY ./binder/postBuild tmp/postBuild
 RUN bash tmp/postBuild
 
 
+
+ENV PYVISTA_TRAME_SERVER_PROXY_PREFIX='/proxy/'
 
 
