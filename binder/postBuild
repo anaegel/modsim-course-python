@@ -50,3 +50,4 @@ cmake -DDIM="2;3" -DCPU=1 -DPARALLEL=OFF ..
 cmake -DUSE_PYBIND11=ON -DCMAKE_POLICY_DEFAULT_CMP0057=NEW ..
 cmake -DLimex=ON -DConvectionDiffusion=ON -DSuperLU6=ON ..
 make 
+
