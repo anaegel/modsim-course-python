@@ -2,6 +2,8 @@
 build-essential
 clang
 llvm
+lldb
+gdb
 libopenmpi-dev 
 liblapack-dev
 libblas-dev 

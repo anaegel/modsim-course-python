@@ -45,8 +45,8 @@ rm -rf /srv/conda/lib/python3.11*
 cd $UG4_ROOT
 mkdir build
 cd build
-# cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
-# cmake -DDIM="2;3" -DCPU=1 -DPARALLEL=OFF ..
-# cmake -DUSE_PYBIND11=ON -DCMAKE_POLICY_DEFAULT_CMP0057=NEW ..
-# cmake -DLimex=ON -DConvectionDiffusion=ON -DSuperLU6=ON ..
-# make 
+cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release ..
+cmake -DDIM="2;3" -DCPU=1 -DPARALLEL=OFF ..
+cmake -DUSE_PYBIND11=ON -DCMAKE_POLICY_DEFAULT_CMP0057=NEW ..
+cmake -DLimex=ON -DConvectionDiffusion=ON -DSuperLU6=ON ..
+make 
