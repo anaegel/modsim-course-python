@@ -122,6 +122,15 @@ timeInt = limex.LinearTimeIntegrator2dCPU1(timeDisc)
 timeInt.set_linear_solver(lsolver)
 timeInt.set_time_step(dt)
 
+
+# Exporting the result to a vtu-file
+# can be visualized in paraview or with a python extension
+# We add a corresponding observer to the time integrator.
+def MyCallback(usol, step, time, dt) :
+    ug4.WriteGridFunctionToVTK(usol, "SkinDiffusion_"+str(int(step)).zfill(5)+".vtu")
+pyobserver =ug4.PythonCallbackObserver2dCPU1(MyCallback) 
+timeInt.attach_observer(pyobserver)
+
 # Solving the transient problem
 try:
     timeInt.apply(usol, endTime, usol, startTime)
@@ -129,12 +138,8 @@ except Exception as inst:
     print(inst)
 
 
-# Exporting the result to a vtu-file
-# can be visualized in paraview or with a python extension
-ug4.WriteGridFunctionToVTK(usol, "Solution_SkinDif_Pybind")
 
-
-# Plotting the result using pyvista
+# Plot the result using pyvista
 import pyvista
 
 result = pyvista.read('Solution_SkinDif_Pybind.vtu')
